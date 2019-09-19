@@ -28,8 +28,9 @@ library.add(
 const App = props => {
   return (
     <React.Fragment>
-      <Route exact path="/" render={() => <Login {...props} />} />
-      <Route exact path="/Main" render={() => <Main {...props} />} />
+       <Route exact path="/" render={() => <Main {...props} />} />
+      {/* <Route exact path="/" render={() => <Login {...props} />} />
+      <Route exact path="/Main" render={() => <Main {...props} />} /> */}
     </React.Fragment>
   );
 };

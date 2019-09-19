@@ -6,12 +6,12 @@ import InsertItem from "./InsertItem";
 import Tables from "./Table";
 
 const Main = props => {
-  useEffect(() => {
-    (localStorage.getItem("remember") === null &&
-      props.main.admin === undefined &&
-      GoToLogin()) ||
-      props.main.navBar.setSelectedMenu("Admins");
-  }, []);
+  // useEffect(() => {
+  //   (localStorage.getItem("remember") === null &&
+  //     props.main.admin === undefined &&
+  //     GoToLogin()) ||
+  //     props.main.navBar.setSelectedMenu("Admins");
+  // }, []);
 
   const GoToLogin = () => {
     props.history.goBack();
